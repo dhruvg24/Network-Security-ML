@@ -23,6 +23,8 @@ from sklearn.ensemble import (
 
 )
 import mlflow
+import dagshub
+dagshub.init(repo_owner='dhruvg24', repo_name='Network-Security-ML', mlflow=True)
 
 class ModelTrainer:
     def __init__(self, model_trainer_config: ModelTrainerConfig,data_transformation_artifact: DataTransformationArtifact):
